@@ -1,0 +1,260 @@
+%% start of file `template.tex'.
+%% Copyright 2006-2015 Xavier Danaux (xdanaux@gmail.com), 2020-2022 moderncv maintainers (github.com/moderncv).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+
+\documentclass[11pt,a4paper,sans]{moderncv}        
+% possible options include font size ('10pt', '11pt' and '12pt'), 
+% paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+
+% moderncv themes
+\moderncvstyle{classic}                             
+% style options are 'casual' (default), 'classic', 'banking', 'oldstyle' and 'fancy'
+\moderncvcolor{black}  
+\definecolor{color1}{rgb}{0,0,0.5} % Titles color                            
+ % color options 'black', 'blue' (default), 'burgundy', 'green', 'grey', 'orange', 'purple' and 'red'
+%\renewcommand{\familydefault}{\sfdefault}        
+ % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
+%\nopagenumbers{}                                  
+% uncomment to suppress automatic page numbering for CVs longer than one page
+
+% adjust the page margins
+\usepackage[scale=0.75]{geometry}
+\setlength{\footskip}{136.00005pt}                 
+% depending on the amount of information in the footer, you need to change this value. comment this line out and set it to the size given in the warning
+%\setlength{\hintscolumnwidth}{3cm}                
+% if you want to change the width of the column with the dates
+%\setlength{\makecvheadnamewidth}{10cm}            
+% for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
+
+% font loading
+% for luatex and xetex, do not use inputenc and fontenc
+% see https://tex.stackexchange.com/a/496643
+\ifxetexorluatex
+  \usepackage{fontspec}
+  \usepackage{unicode-math}
+  \defaultfontfeatures{Ligatures=TeX}
+  \setmainfont{Latin Modern Roman}
+  \setsansfont{Latin Modern Sans}
+  \setmonofont{Latin Modern Mono}
+  \setmathfont{Latin Modern Math} 
+\else
+  \usepackage[T1]{fontenc}
+  \usepackage{lmodern}
+\fi
+
+% document language
+\usepackage[english]{babel}  % FIXME: using spanish breaks moderncv
+
+% personal data
+\name{Hans}{Hartmann}
+\title{Ingeniero Industrial-Computación UC}                               % optional, remove / comment the line if not wanted
+% \born{4 July 1776}                                 % optional, remove / comment the line if not wanted
+% \address{street and number}{postcode city}{country}% optional, remove / comment the line if not wanted; the "postcode city" and "country" arguments can be omitted or provided empty
+% \phone[fixed]{+2~(345)~678~901}
+% \phone[fax]{+3~(456)~789~012}
+\social[github]{hrhartmann}                              % optional, remove / comment the line if not wanted
+% \homepage{www.johndoe.com}                         % optional, remove / comment the line if not wanted
+
+% Social icons
+% \social[linkedin]{hans-hartmann-vaccarezza-499556245}                        % optional, remove / comment the line if not wanted
+% \social[xing]{john\_doe}           \textsl{}                % optional, remove / comment the line if not wanted
+% \social[twitter]{ji\_doe}                             % optional, remove / comment the line if not wanted
+% \social[gitlab]{hrhartmann}                              % optional, remove / comment the line if not wanted
+% \social[stackoverflow]{0000000/johndoe}            % optional, remove / comment the line if not wanted
+% \social[bitbucket]{jdoe}                           % optional, remove / comment the line if not wanted
+% \social[skype]{jdoe}                               % optional, remove / comment the line if not wanted
+% \social[orcid]{0000-0000-000-000}                  % optional, remove / comment the line if not wanted
+% \social[researchgate]{jdoe}                        % optional, remove / comment the line if not wanted
+% \social[researcherid]{jdoe}                        % optional, remove / comment the line if not wanted
+% \social[telegram]{jdoe}                            % optional, remove / comment the line if not wanted
+% \social[whatsapp]{12345678901}                     % optional, remove / comment the line if not wanted
+% \social[signal]{12345678901}                       % optional, remove / comment the line if not wanted
+% \social[matrix]{@johndoe:matrix.org}               % optional, remove / comment the line if not wanted
+% \social[googlescholar]{googlescholarid}            % optional, remove / comment the line if not wanted
+
+
+% \extrainfo{additional information}                 % optional, remove / comment the line if not wanted
+% \photo[64pt][0.4pt]{picture}                       % optional, remove / comment the line if not wanted; '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file
+% \quote{Some quote}                                 % optional, remove / comment the line if not wanted
+
+% bibliography adjustments (only useful if you make citations in your resume, or print a list of publications using BibTeX)
+%   to show numerical labels in the bibliography (default is to show no labels)
+%\makeatletter\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}\makeatother
+\renewcommand*{\bibliographyitemlabel}{[\arabic{enumiv}]}
+%   to redefine the bibliography heading string ("Publications")
+%\renewcommand{\refname}{Articles}
+
+% bibliography with mutiple entries
+%\usepackage{multibib}
+%\newcites{book,misc}{{Books},{Others}}
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+%\begin{CJK*}{UTF8}{gbsn}                          % to typeset your resume in Chinese using CJK
+%-----       resume       ---------------------------------------------------------
+\makecvtitle
+
+%----------------------------------------------------------------------------------------
+%	SECTION Education 
+%----------------------------------------------------------------------------------------
+
+
+\section{Educación}
+
+\cventry{2017 {-} 2021}{Ingeniero Industrial Computación}{Pontificia Universidad Católica de Chile}{}{}{}  % Arguments 
+\cvitem{Licenciatura}{Licenciado en Ciencias de la Ingeniería, Ingeniería de Software.}
+\cvitem{Título}{Ingeniero Civil de Industrial con Diploma en Ingeniería de Computación.}
+\cvitem{Ayudante}{Coach en ramo de proyecto de especialidad, trabajo con Vigalab (Empresa).}
+
+%----------------------------------------------------------------------------------------
+%	SECTION EXPERIENCE 
+%----------------------------------------------------------------------------------------
+
+\section{Experiencia}
+
+\cventry{2024 {-} 2025}{Full-Time}{Principal}{Software Engineer}{desde julio 2024}
+{
+    \begin{itemize}
+        \item Creación plataforma de seguros de vida con ahorros, fullstack.
+        \item Uso de infraestructura serverless con AWS y deploys automatizados.
+        \item Aseguramiento de calidad mediante testing transversal, Sonarqube y pipelines.
+        \item Manejo de datos financieros y personales sensibles.
+        \item Resolución de vulnerabilidades.
+        \item Herramientas relevantes: TypeScript, AWS y AWS cdks, Next, Github Actions.
+    \end{itemize}
+}
+
+
+\cventry{2023 {-} 2024}{Freelance}{DataAnnotation}{Software Engineer}{7 meses}
+{
+    \begin{itemize}
+        \item Entrenando modelos de IA en proyectos confidenciales.
+    \end{itemize}
+}
+
+
+\cventry{2022 {-} 2023}{Full-Time}{GeoVictoria}{Tech Lead}{1 año 1 mes}
+{
+    \begin{itemize}
+        \item Migración del servicio de usuarios para millones de usuarios y miles de empresas.
+        \item A cargo de la migración de servicios de reportería en distintos formatos.
+        \item Desarrollo de un reloj de marcaje web para usuarios.
+        \item Herramientas relevantes: API REST, C\#,.NET, Azure, Python, SQL, HTML. 
+    \end{itemize}
+}
+
+\cventry{2021 {-} 2022}{Freelance}{OSAM}{Software Engineer}{6 meses}{
+% \newline{}\newline{}
+\begin{itemize}
+    \item Desarrollo de requisitos en plataforma backend en Django.
+    \item Gestión de cuenta AWS, base de datos no relacional (MongoDB) y servidor para la aplicación.
+    \item Herramientas relevantes: API REST, Python, Django, AWS, MongoDB. 
+\end{itemize}}
+
+% \cvitem{Teacher Assistant}{Coach of team on specialty project course in development of application for Vigalab (Company).}
+
+\cventry{2021}{Part-Time}{Houm}{Software Engineer}{}{
+% \newline{}\newline{}
+\begin{itemize}
+    \item Automatización de publicación de más de 1000 propiedades en portales externos para 3 países (Chile, Colombia, México).
+    \item Desarrollo de funcionalidades full-stack en la página de administración.
+    \item Encargado de la gestión de 2 microservicios para la automatización de portales externos.
+    \item Herramientas relevantes: Python, Django, AWS, MongoDB, React.
+\end{itemize}}
+
+\cventry{2018 {-} 2020}{Profesor particular}{Tutores Scuola}{}{}{
+% \newline{}\newline{}
+\begin{itemize}
+    \item Clases particulares a alumnos escolares y universitarios de matemática, física y otros.
+\end{itemize}}
+
+
+
+% \cvitem{Degree}{Major: Software Engineer - Minor: Insutrial Engineer.}
+% \cvitem{Capstone}{Administrator in development of application for OSAM ingeniería (Company), specialty project course.}
+
+% \cventry{2018}{Práctica no profesional}{Easy S.A. Cencosud}{}{}{
+% % \newline{}\newline{}
+% \begin{itemize}
+%     \item Control de inventario, reposición de stock, orden de los productos y nuevas dispocisiones.
+% \end{itemize}}
+
+%----------------------------------------------------------------------------------------
+%	SECTION Leadership and service 
+%----------------------------------------------------------------------------------------
+
+
+\section{Liderazgo y Servicio}
+
+\cventry{2018 {-} 2023}{Dirigente Scout}{Grupo Scout San Francesco D'Assisi}{}{}{}
+\cventry{2015 {-} 2023}{Voluntariado}{Universidad - Scout}{Trabajos sociales de invierno y verano}{}{}{}
+% \cventry{2017}{Trabajos de invierno}{Servidores para Chile}{}{}{}
+\cventry{2016}{Centro de alumnos}{Miembro directiva, centro de alumnos Scuola Italiana}{}{}{}
+% \cventry{2012 - 2016}{Basketball team}{Scuola Italiana}{}{}{}
+% \cventry{2015}{Seminar}{Cosmopolitis - Ciudadanos del mundo}{Education, globalization and environment}{}{}
+
+
+%----------------------------------------------------------------------------------------
+% SKILLS & INTERESTS SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Habilidades e Intereses}
+
+\cvitem{Programación}{C\#,.NET, Python, Django, React, HTML, CSS, JS, Azure, AWS, Postrgres, SQL, MongoDB.}
+\cvitem{Computación}{IA, Aprendizaje profundo, Criptografía, Desarrollo ágil, Arquitectura de Software, Scrum.}
+\cvitem{Idiomas}{Español (nativo), Inglés, Italiano.}
+\cvitem{Intereses}{Lectura, Ciencia y tecnología, Motos, Campismo, Deportes (Basketball, Ajedrez, Hiking, Snowboard, Ciclismo y otros).}
+
+%----------------------------------------------------------------------------------------
+%	REFERENCES SECTION
+%----------------------------------------------------------------------------------------
+
+% \section{References}
+% \begin{cvcolumns}
+%   \cvcolumn{Category 1}{\begin{itemize}\item Person 1\item Person 2\item Person 3\end{itemize}}
+%   \cvcolumn{Category 2}{Amongst others:\begin{itemize}\item Person 1, and\item Person 2\end{itemize}(more upon request)}
+%   \cvcolumn[0.5]{All the rest \& some more}{\textit{That} person, and \textbf{those} also (all available upon request).}
+% \end{cvcolumns}
+
+% Publications from a BibTeX file without multibib
+%  for numerical labels: \renewcommand{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}% CONSIDER MERGING WITH PREAMBLE PART
+%  to redefine the heading string ("Publications"): \renewcommand{\refname}{Articles}
+% \nocite{*}
+% \bibliographystyle{plain}
+% \bibliography{publications}                        % 'publications' is the name of a BibTeX file
+
+% % Publications from a BibTeX file using the multibib package
+% %\section{Publications}
+% %\nocitebook{book1,book2}
+% %\bibliographystylebook{plain}
+% %\bibliographybook{publications}                   % 'publications' is the name of a BibTeX file
+% %\nocitemisc{misc1,misc2,misc3}
+% %\bibliographystylemisc{plain}
+% %\bibliographymisc{publications}                   % 'publications' is the name of a BibTeX file
+
+% \clearpage
+% %-----       letter       ---------------------------------------------------------
+% % recipient data
+% \recipient{Company Recruitment team}{Company, Inc.\\123 somestreet\\some city}
+% \date{January 01, 1984}
+% \opening{Dear Sir or Madam,}
+% \closing{Yours faithfully,}
+% \enclosure[Attached]{curriculum vit\ae{}}          % use an optional argument to use a string other than "Enclosure", or redefine \enclname
+% \makelettertitle
+
+% Albert Einstein discovered that $e=mc^2$ in 1905.
+
+% \[ e=\lim_{n \to \infty} \left(1+\frac{1}{n}\right)^n \]
+
+% \makeletterclosing
+
+%\clearpage\end{CJK*}                              % if you are typesetting your resume in Chinese using CJK; the \clearpage is required for fancyhdr to work correctly with CJK, though it kills the page numbering by making \lastpage undefined
+\end{document}
+
+
+%% end of file `template.tex'.

@@ -1,0 +1,16 @@
+header {
+  background-color: #021b29;
+  color: #1cbcc7;
+  padding: 50px 50px;
+  border-radius: 0 0 5px 0;
+}
+
+header h1 {
+  color: #f9f9f9;
+  margin-bottom: 4px;
+}
+
+header h1,
+header p {
+  margin: 4px 0;
+}
